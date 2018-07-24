@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="static/themes/todo_list.css">
+</head>
+<body>
+  <h1>My ToDo List</h1>
+  <ul>
+    {% for item in list_items %}
+      <li>
+        <span>{{item.content}}</span>
+        <span class="spacer"></span>
+        <span class="delete">
+          <img src="static/images/noun_Delete_1272081.svg">
+        </span>
+      </li>
+    {% endfor %}
+    <li>
+      <form method="post">
+        <input type="text" name="list_item"
+               placeholder="Enter a new TODO...">
+        <span class="spacer"></span>
+        <button>Add</button>
+      </form>
+    </li>
+  </ul>
+  <script src="static/scripts/todo_list.js"></script>
+</body>
+</html>
