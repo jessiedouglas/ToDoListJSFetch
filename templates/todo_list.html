@@ -15,12 +15,12 @@
         </span>
       </li>
     {% endfor %}
-    <li>
+    <li id="last">
       <form method="post">
-        <input type="text" name="list_item"
+        <input id="newListItem" type="text" name="list_item"
                placeholder="Enter a new TODO...">
         <span class="spacer"></span>
-        <button>Add</button>
+        <button id="addButton">Add</button>
       </form>
     </li>
   </ul>
